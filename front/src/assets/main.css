@@ -1,0 +1,201 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: var(--text-primary);
+}
+
+input, select {
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  outline: 0;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: var(--accent-gold);
+}
+
+button {
+  border-radius: 10px;
+  background: var(--accent-gold);
+  padding: 12px 36px;
+  color: #FFF;
+  text-align: center;
+  font-weight: 500;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(.95);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button_transparent {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+a {
+  color: var(--accent-gold);
+  transition: .2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+.auth {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.auth button {
+  display: block;
+  margin: 0 auto 10px;
+  width: 100%;
+}
+
+.auth p {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--text-secondary);
+}
+
+.auth small {
+  color: #f44336;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* CSS Variables */
+:root {
+  /* Light theme */
+  --bg-page: #f0f0f0;
+  --bg-card: #ffffff;
+  --bg-step: #f9f9f9;
+  --bg-secondary: #f5f5f5;
+  --text-primary: #111111;
+  --text-secondary: #4a4a4a;
+  --text-muted: #666666;
+  --border-light: #ffffff;
+  --accent-color: #000000;
+  --accent-hover: #333333;
+  --accent-gold: #ff8408;
+  --accent-gold-hover: #ef902f;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 32px rgba(0, 0, 0, 0.12);
+  --transition: all 0.2s ease;
+}
+
+:root.dark {
+  /* Dark theme */
+  --bg-page: #141414;
+  --bg-card: #1f1f1f;
+  --bg-step: #1f1f1f;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #e5e5e5;
+  --text-secondary: #a3a3a3;
+  --text-muted: #737373;
+  --border-light: #2a2a2a;
+  --accent-color: #ff8408;
+  --accent-hover: #daddda;
+  --accent-gold: #ff8408;
+  --accent-gold-hover: #ef902f;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 32px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bookings-table th {
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+}
+
+.bookings-table td {
+  border-bottom-color: var(--border-light);
+}
+
+.card, .profile-card, .resource-card, .booking-card,
+.bookings-table-container, .stats-card, .feature-card, .step-card {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.footer {
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+}
+
+:root.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+:root.dark ::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+:root.dark ::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 4px;
+}
+
+:root.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

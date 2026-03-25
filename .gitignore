@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+*.log
+*.sqlite3
+*.db
+
+# Django
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+static/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Frontend
+front/node_modules/
+front/dist/
+front/.env.local
+front/.env.*.local
+front/npm-debug.log*
+front/yarn-debug.log*
+front/yarn-error.log*
+front/.vite/
+
+# Backend
+back/__pycache__/
+back/.venv/
+back/venv/
+back/media/
+back/static/
+back/*.log
+back/db.sqlite3
+
+# Environment variables
+.env
+.env.local
+.env.production
